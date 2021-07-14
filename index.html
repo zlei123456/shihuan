@@ -1,18 +1,52 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-07-14 09:54:37
+ * @LastEditTime: 2021-07-14 14:37:00
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /msnm/index.html
+-->
 <html>
 <head>
     <meta charset="utf8">
     <title>首页</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
     <div id="app">
-        <div style="background-color: black; width: auto; height: min-content; display: flex; flex-direction: row; justify-content: space-between;align-items: center; padding-left: 20px;padding-right: 20px;">
+        <div style="background-color: #1c1c1c; width: auto; height: min-content; display: flex; flex-direction: row; justify-content: space-between;align-items: center; padding-left: 20px;padding-right: 20px;">
             <img src="http://demos.admin868.com/demo186/skin/images/logo.png" width="200px" height="60px"/>
 
             <div>
-                <p style="color: #717171; font-size: 14px; padding-left: 30px; padding-right: 30px;">首页</p>
+                <ul class="nav">
+                    <li><a class="selected"  href="javascript:void(0)">首页</a></li>
+                    <li><a href="src/about.html">about us</a></li>
+                    <li><a href="src/about.html">main products</a></li>
+                    <li><a href="src/about.html">development</a></li>
+                    <li><a href="src/about.html">contact us</a></li>
+                </ul>
+                <!-- <p style="color: #717171; font-size: 14px; padding-left: 30px; padding-right: 30px;">首页</p> -->
+            </div>
+        </div>
+
+        <!-- <iframe src="src/home.html" style="width: 100%; height: 100%;">
+            </iframe> -->
+
+        <img src="./res/home.png" width="100%" height="500px"/>
+        <div style="display: flex; flex-direction: row; ">
+            <div style="width: 50%; align-items: center; margin-top: 40px; margin-bottom: 100px; padding-left: 10px; padding-right: 10px;">
+                <p style="color: #000; font-size: 38px; text-align: center;">ABOUT+</p>
+                <p style="color: #878787; line-height: 30px; text-align: center;">Inner Mongolia Shihuan New Materials Co., Ltd. founded in 2011 with over 10 million US dollars investment, focusing on producing ultra-thin fiberglass products and its raw materials. </p>
+            </div>
+            <div style="width: 50%; position:relative">
+                <img src="res/about0.png" width="60%" style="left: 5%; top: 5%; position: absolute;">
+                <img src="res/about1.png" width="60%" style="right: 3%; top: 30%; position: absolute;">
+                <img src="res/development0.png" width="60%" style="left: 5%; top: 50%; position: absolute;">
             </div>
         </div>
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
