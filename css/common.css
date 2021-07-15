@@ -28,3 +28,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.textstyle {
+    color: #878787; 
+    line-height: 30px; 
+    /* text-align: center; */
+}
+
+.contactItem {
+    color: #2c2b2b; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
