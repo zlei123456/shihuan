@@ -11,20 +11,23 @@
     <meta charset="utf8">
     <title>home</title>
     <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
     <div id="app">
-        <div style="background-color: #1c1c1c; width: auto; height: min-content; display: flex; flex-direction: row; justify-content: space-between;align-items: center; padding-left: 20px;padding-right: 20px;">
-            <img src="http://demos.admin868.com/demo186/skin/images/logo.png" width="200px" height="60px"/>
+        <div class="topUI">
+            <!-- <img src="http://demos.admin868.com/demo186/skin/images/logo.png" width="200px" height="60px"/> -->
+            <!-- <p class="logo">SHIHUAN</p> -->
+            <img src="res/logoText.png" width="200px" style="margin-left: 20px;"/>
 
             <div>
                 <ul class="nav">
-                    <li><a class="selected"  href="javascript:void(0)">home</a></li>
-                    <li><a href="src/about.html">about us</a></li>
-                    <li><a href="src/about.html">main products</a></li>
-                    <li><a href="src/about.html">development</a></li>
-                    <li><a href="src/about.html">contact us</a></li>
+                    <li><a class="selected"  href="javascript:void(0)">Home</a></li>
+                    <li><a href="src/about.html">About us</a></li>
+                    <li><a href="src/products.html">Main products</a></li>
+                    <li><a href="src/development.html">Development</a></li>
+                    <li><a href="src/contactUs.html">Contact us</a></li>
                 </ul>
                 <!-- <p style="color: #717171; font-size: 14px; padding-left: 30px; padding-right: 30px;">home</p> -->
             </div>
@@ -33,20 +36,64 @@
         <!-- <iframe src="src/home.html" style="width: 100%; height: 100%;">
             </iframe> -->
 
-        <img src="./res/home.png" width="100%" height="500px"/>
-        <div style="display: flex; flex-direction: row; margin-bottom: 40px;">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./res/home1.jpg" width="100%" height="100%"/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./res/home.png" width="100%" height="100%"/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./res/about0.png" width="100%" height="100%"/>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+        </div>
+
+        <!-- <img src="./res/home.png" width="100%" height="500px"/> -->
+        <div style="display: flex; flex-direction: row; margin-bottom: 40px; margin-top: 10px;">
             <div style="width: 50%; align-items: center; margin-top: 40px; margin-bottom: 100px; padding-left: 10px; padding-right: 10px;">
                 <p style="color: #000; font-size: 38px; text-align: center;">ABOUT+</p>
                 <p class="textstyle">  Inner Mongolia Shihuan New Materials Co., Ltd. founded in 2011 with over 10 million US dollars investment, focusing on producing ultra-thin fiberglass products and its raw materials. </p>
             </div>
             <div style="width: 50%; position:relative">
-                <img src="res/about0.png" width="60%" style="left: 5%; top: 5%; position: absolute;">
-                <img src="res/about1.png" width="60%" style="right: 3%; top: 30%; position: absolute;">
-                <img src="res/development0.png" width="60%" style="left: 5%; top: 50%; position: absolute;">
+                <!-- <img src="res/about0.png" width="60%" style="left: 5%; top: 5%; position: absolute;"> -->
+                <img src="res/about1.png" width="80%" style="margin-left: 10%;">
+                <!-- <img src="res/development0.png" width="60%" style="left: 5%; top: 50%; position: absolute;"> -->
             </div>
+        </div>
+
+        <div class="bottomUI">
+            <p class="bottomFont">@ Inner Mongolia Shihuan New Materials Co., Ltd</p>
         </div>
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+          direction: 'horizontal', // 垂直切换选项
+          loop: true, // 循环模式选项
+          
+          // 如果需要分页器
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          
+          // 如果需要前进后退按钮
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          
+        })        
+        </script>
 </body>
 </html>
