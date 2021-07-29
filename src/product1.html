@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-07-14 10:57:45
- * @LastEditTime: 2021-07-14 17:11:51
+ * @LastEditTime: 2021-07-14 17:11:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /msnm/src/about.html
@@ -26,36 +26,48 @@
                 <div>
                     <ul class="nav">
                         <li><a href="../index.html">Home</a></li>
-                        <li><a class="selected"  href="javascript:void(0)">About us</a></li>
+                        <li><a href="about.html">About us</a></li>
                         <li><a href="products.html">Main products</a></li>
                         <li><a href="development.html">Development</a></li>
                         <li><a href="contactUs.html">Contact us</a></li>
                     </ul>
                 </div>
             </div>
-
             <div style="display: flex; width: 100%; height: 300px; background-image: url(../res/bg.jpg); justify-content: center; align-items: center; margin-top: 5px; border-radius: 6px;">
                 <div style="background-color: #ffffff5a; width: 50%; height: 150px; align-items: center; border-radius: 4px;" class="fadeInDown">
                     <p style="color: black; font-size: 28px; font-weight: 700; text-align: center;">The pursuit of excellence endless</p>
                     <p style=" text-align: center;">Inner Mongolia Shihuan New Materials Co., Ltd</p>
                 </div>
             </div>
-            <!-- <div style="width: 100%; margin-top: 10px;">
-                <img src="../res/bg1.jpg" width="100%"/>
-            </div> -->
-            <div style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 40px;">
-                <p class="textstyle">  Inner Mongolia Shihuan New Materials Co., Ltd. has plant of 33, 000 square meters with 4 production lines, annual production is 10,000 tons of ultra-thin fiberglass, 20,000 tons glass frit (fiberglass’s raw material), total output value is around 23 million US dollars. </p>
-                <p class="textstyle" style="margin-bottom: 20px;">  Ultra-thin fiber glass is kind of high-end insulated and high tensile strength product, widely applied on car-manufacturing, electric vehicles, vessel industry, wind and solar energy, batteries and insulation layer, laboratory filter paper, refrigeration equipment, composite materials, space shuttle, yacht, wind turbine fan blade, civil construction, plant building, train manufacturing etc.
-                </p>
 
-                <img src="../res/about.jpg" width="47%"/>
-                <img src="../res/about1.png" width="44%"/>
+            <div id="productInfoDiv">
+                <div style="flex-direction: column;">
+                    <img id="productInfoImg1" />
+                    <div style="flex-direction: row; align-items: center; height: 250px; ">
+                        <video width="200px" height="200px" loop="loop" autoplay="autoplay" muted>
+                            <source src="../res/p1.mp4" type="video/mp4">
+                          </video>
+                        <img id="productInfoImg2" />
+                    </div>
+
+                </div>
+                
+                <ul style="margin-left: 30px; margin-right: 20px;">
+                    <li id="productInfoName">name</li>
+                    <li id="productInfoTxt"></li>
+                    <li id="productInfoTxt1"></li>
+                    <li id="productInfoTxt2"></li>
+                </ul>
             </div>
 
-            <div class="bottomUI">
-                <p class="bottomFont">@ Inner Mongolia Shihuan New Materials Co., Ltd</p>
-            </div>
         </div>
+
+        <div class="bottomUI">
+            <p class="bottomFont">@ Inner Mongolia Shihuan New Materials Co., Ltd</p>
+        </div>
+
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/product1.js"></script>
 
     </body>
 </html>
